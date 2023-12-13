@@ -34,3 +34,21 @@ ScrollReveal().reveal('.home-content, .heading', { origin: 'top'});
 ScrollReveal().reveal('.btn-portfolio, .services-container, .portfolio-box, .contact form', { origin: 'bottom'});
 ScrollReveal().reveal('.about-img', { origin: 'left'});
 ScrollReveal().reveal('.home-img, .about-content', { origin: 'right'});
+
+
+/* NAVBAR */
+
+const hamburger = document.querySelector(".hamburger");
+const navbar = document.querySelector(".navbar");
+
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navbar.classList.toggle("active");
+})
+
+document.querySelectorAll(".navbar").forEach(n => n. 
+    addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        navbar.classList.remove("active")
+    }))
